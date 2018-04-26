@@ -1,3 +1,5 @@
+# Scrape the last 10 results for the NBA on soccer24.com
+
 from selenium import webdriver
 
 driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
