@@ -17,8 +17,9 @@ away_team = driver.find_elements_by_css_selector('td.cell_ac.team-away')
 away_teams = [x.text for x in away_team][:8]
 
 event_score = driver.find_elements_by_css_selector('td.cell_sa.score.bold')
-scores = [x.text for x in event_score][:26]
+scores = [x.text for x in event_score][:8]
 
+print('Last 8 results for the Champions League')
 for date, home_team, away_team, score in zip(dates, home_teams, away_teams, scores):
     print(str(date) + ' | ' + str(home_team) + ' - ' + str(away_team) + ' | ' + str(score) + '\n')
 
