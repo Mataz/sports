@@ -1,8 +1,8 @@
 from selenium import webdriver
 
 driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
-driver.implicitly_wait(15)
-driver.get('https://www.soccer24.com/europe/champions-league/results/')     # Important - Have to wait in order to properly scrape
+driver.implicitly_wait(15)                  # Important - Have to wait in order to properly scrape
+driver.get('https://www.soccer24.com/europe/champions-league/results/')
 
 event_round = driver.find_elements_by_class_name('event_round')
 rounds = [x.text for x in event_round][:3]
