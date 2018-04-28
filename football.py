@@ -32,9 +32,6 @@ def league_cl():
         print(str(date) + ' | ' + str(home_team) + ' - ' + str(away_team) + ' | ' + str(score) + '\n')
 
 
-league_cl()
-
-
 def league_ligue1():
 
     driver.get('https://www.soccer24.com/france/ligue-1/results/')
